@@ -1,0 +1,432 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Noto Serif JP', serif;
+	font-size: 62.5%;
+	letter-spacing: 2px;
+	color: #333333;
+	background: repeating-linear-gradient(135deg, rgba(236, 236, 236,0.02) 0px, rgba(236, 236, 236,0.02) 26px,rgba(210, 210, 210,0.02) 26px, rgba(210, 210, 210,0.02) 52px,rgba(184, 184, 184,0.02) 52px, rgba(184, 184, 184,0.02) 78px,rgba(158, 158, 158,0.02) 78px, rgba(158, 158, 158,0.02) 104px,rgba(131, 131, 131,0.02) 104px, rgba(131, 131, 131,0.02) 130px,rgba(105, 105, 105,0.02) 130px, rgba(105, 105, 105,0.02) 156px,rgba(79, 79, 79,0.02) 156px, rgba(79, 79, 79,0.02) 182px,rgba(53, 53, 53,0.02) 182px, rgba(53, 53, 53,0.02) 208px),repeating-linear-gradient(45deg, rgba(213, 213, 213,0.02) 0px, rgba(213, 213, 213,0.02) 26px,rgba(192, 192, 192,0.02) 26px, rgba(192, 192, 192,0.02) 52px,rgba(171, 171, 171,0.02) 52px, rgba(171, 171, 171,0.02) 78px,rgba(150, 150, 150,0.02) 78px, rgba(150, 150, 150,0.02) 104px,rgba(129, 129, 129,0.02) 104px, rgba(129, 129, 129,0.02) 130px,rgba(108, 108, 108,0.02) 130px, rgba(108, 108, 108,0.02) 156px,rgba(87, 87, 87,0.02) 156px, rgba(87, 87, 87,0.02) 182px,rgba(66, 66, 66,0.02) 182px, rgba(66, 66, 66,0.02) 208px),linear-gradient(90deg, #FFF,#FFF);
+}
+a {
+	color: #333333;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+button {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+/* 全体 */
+.wrapper {
+	background-image: url("../images/shop_image.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: top right;
+	display: flex;
+	justify-content: center;
+}
+.wrapper #about,
+.wrapper #course,
+.wrapper #news,
+.wrapper #access {
+	margin: 80px 0;
+}
+/* ヘッダー */
+header {
+	width: 250px;
+	height: 550px;
+	background: #ffffff;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	margin-top: 40px;
+	margin-right: 60px;
+	font-size: 1.4em;
+}
+header h1 {
+	text-align: center;
+	margin: 20px 0;
+}
+header h1 img {
+	width: 100px;
+	height: 100px;
+}
+header h1 img:hover {
+	opacity: 0.7;
+}
+header nav button {
+	display: none;
+}
+header nav ul li {
+	text-align: center;
+	font-weight: bold;
+}
+header nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+}
+header nav ul li a:hover {
+	background: #D0ADD0;
+}
+header nav ul li .current{
+	background: #F0ECF0;
+}
+header .tel {
+	padding: 40px 0 20px;
+}
+header .tel p {
+	text-align: center;
+	font-size: 1.4em;
+}
+header .tel p:nth-child(1) {
+	font-size: 0.8em;
+	margin-bottom: 10px;
+}
+header .tel p img {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+/* メイン */
+main {
+	width: 770px;
+	height: auto;
+}
+main h3 {
+	font-family: 'Prata', serif;
+	color: #D0ADD0;
+	font-size: 5em;
+	margin-bottom: 40px;
+}
+main h3 span {
+	color: #333333;
+	font-size: 0.3em;
+	font-weight: bold;
+	padding-left: 20px;
+}
+/* ショップイメージ */
+#shop_image h2 {
+	color: #8A25B1;
+	font-family: 'Prata', serif;
+	font-size: 6em;
+	margin-top: 40px;
+	margin-bottom: 280px;
+}
+#shop_image h2 span {
+	display: block;
+	margin-top: 20px;
+	font-size: 0.3em;
+	font-weight: bold;
+	color: #333333;
+	letter-spacing: 10px;
+}
+/* アバウト */
+#about .about_contents {
+	display: flex;
+	justify-content: space-between;
+}
+#about .about_contents p {
+	font-size: 1.4em;
+	line-height: 130%;
+	margin-right: 40px;
+}
+#about .about_contents img {
+	width: 250px;
+	height: 250px;
+}
+/* コース */
+#course .course_type {
+	display: flex;
+	justify-content: space-between;
+}
+#course .course_type li {
+	background: #ffffff;
+}
+#course .course_type li img {
+	width: 240px;
+	height: auto;
+}
+#course .course_type li img:hover,
+#course .course_type li .course_txt:hover {
+	opacity: 0.7;
+}
+#course .course_type li .course_txt {
+	padding: 20px;
+	box-sizing: border-box;
+}
+#course .course_type li .course_txt h4 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+#course .course_type li .course_txt p {
+	margin: 10px 0;
+}
+#course .course_type li .course_txt .time {
+	font-size: 1.2em;
+	display: inline-block;
+	background: #D0ADD0;
+	padding: 5px;
+	margin-right: 10px;
+}
+#course .course_type li .course_txt .price {
+	font-size: 2.2em;
+	color: #8A25B1;
+	display: inline-block;
+}
+#course .course_type li .course_txt .price span {
+	font-size: 0.8em;
+}
+#course .course_type li .course_txt ul {
+	list-style-type: disc;
+	list-style-position : inside;
+}
+#course .course_type li .course_txt ul li {
+	font-size: 1.2em;
+	margin-bottom: 7px;
+}
+/* ニュース */
+#news .news_list {
+	background: #ffffff;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+#news .news_list a {
+	display: flex;
+	justify-content: flex-start;
+}
+#news .news_list .news_img {
+	margin-right: 20px;
+}
+#news .news_list .news_img img {
+	width: 90px;
+	height: 90px;
+	background: #ffffff;
+	border: 1px solid #C4C4C4;
+}
+#news .news_list .news_img img:hover,
+#news .news_list .news_txt:hover {
+	opacity: 0.7;
+}
+#news .news_list .news_txt h4 {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin: 10px 0;
+}
+#news .news_list .news_txt p {
+	font-size: 1.4em;
+	line-height: 130%;
+	width: 586px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/* アクセス */
+#access .access_contents {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+#access .access_contents .access_txt dt {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+#access .access_contents .access_txt dd {
+	font-size: 1.4em;
+	line-height: 130%;
+	margin-bottom: 20px;
+}
+#access .access_contents .access_img {
+	margin-left: 20px;
+}
+#access .access_contents .access_img img {
+	width: 320px;
+	height: auto;
+}
+#access .access_map {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+#access .access_map iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+/* フッター */
+footer {
+	width: 100%;
+	background: #ffffff;
+	padding: 20px 0;
+	margin-top: 50px;
+}
+footer .copyright {
+	text-align: center;
+}
+/* ########### 640px以下 ########### */
+@media screen and (max-width: 640px) {
+	/* 全体 */
+	.wrapper {
+		background-size: 100%;;
+		background-position: top left;
+		display: block;
+	}
+	.wrapper #about,
+	.wrapper #course,
+	.wrapper #news,
+	.wrapper #access {
+		width: 90%;
+		margin: 60px auto;
+	}
+	/* ヘッダー */
+	header {
+		width: 100%;
+		height: 50px;
+		background: transparent;
+		box-shadow: none;
+		margin: 0;
+		position: relative;
+	}
+	header h1 {
+		text-align: left;
+		margin: 0 0 0 10px;
+	}
+	header h1 img {
+		width: 50px;
+		height: 50px;
+	}
+	header nav button {
+		display: block;
+		width: 50px;
+		height: 50px;
+		background: #8A25B1;
+		text-align: center;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 100;
+	}
+	header nav button .toggle_icon {
+		display: block;
+		position: absolute;
+		width: 30px;
+		border-bottom: solid 3px #fff;
+		-webkit-transition: .35s ease-in-out;
+		-moz-transition: .35s ease-in-out;
+		transition: .35s ease-in-out;
+		left: 10px;
+	}
+	header nav button span:nth-child(1) {
+		top: 16px;
+	}
+	header nav button span:nth-child(2) {
+		top: 24px;
+	}
+	header nav button span:nth-child(3) {
+		top: 32px;
+	}
+	/* 最初のspanをマイナス45度に */
+	header nav .active span:nth-child(1) {
+		top: 24px;
+		left: 10px;
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	/* 2番目と3番目のspanを45度に */
+	header nav .active span:nth-child(2),
+	header nav .active span:nth-child(3) {
+		top: 24px;
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	header nav ul {
+		display: none;
+		width: 100%;
+		background: #ffffff;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 50;
+	}
+	header .tel {
+		display: none;
+	}
+	/* メイン */
+	main {
+		width: 100%;
+		height: auto;
+	}
+	main h3 {
+		color: #b485c8;
+		font-size: 3em;
+		margin-bottom: 20px;
+	}
+	/* ショップイメージ */
+	#shop_image h2 {
+		font-size: 4em;
+		margin: 200px 0 60px 10px;
+	}
+	/* アバウト */
+	#about .about_contents {
+		display: block;
+	}
+	#about .about_contents p {
+		margin-right: 0;
+	}
+	#about .about_contents img {
+		display: none;
+	}
+	/* コース */
+	#course .course_type {
+		display: block;
+	}
+	#course .course_type li {
+		width: 100%;
+		background: #ffffff;
+		margin-bottom: 20px;
+	}
+	#course .course_type li img {
+		width: 100%;
+		height: auto;
+	}
+	#course .course_type li .course_txt {
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	/* ニュース */
+	#news .news_list {
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	#news .news_list .news_img {
+		margin-right: 10px;
+	}
+	#news .news_list .news_img img {
+		width: 60px;
+		height: 60px;
+	}
+	#news .news_list .news_txt p {
+		display: none;
+	}
+	/* アクセス */
+	#access .access_contents {
+		display: block;
+	}
+	#access .access_contents .access_img {
+		margin-left: 0;
+	}
+	#access .access_contents .access_img img {
+		width: 100%;
+		height: auto;
+	}
+}
